@@ -104,7 +104,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Poppins';
 		font-weight: 300;
-		color: #1173B6;
+		color: #000000;
 		font-size: 14pt;
 		line-height: 1.75em;
 	}
@@ -2213,6 +2213,25 @@ input, select, textarea {
 				margin: 0;
 				font-size: 1.5em;
 			}
+/* Banner */
+
+#banner2 {
+	background: #CCE8F4;
+	background-position: center center;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	text-align: right;
+	position: relative;
+	padding:  0;
+	margin: auto;
+}
+
+		#banner2 header h2 {
+			color: #0B457F;
+			font-weight: inherit;
+			font-size: inherit;
+			margin: inherit;
+		}
 
 /* Intro */
 
@@ -5665,3 +5684,25 @@ body.is-preload .items.onload-fade-in > * > .inner {
 			}
 		
 	}
+	.cookie-banner {
+		position: fixed;
+		bottom: 40px;
+		left: 10%;
+		right: 10%;
+		width: 80%;
+		padding: 5px 14px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: #eee;
+		border-radius: 5px;
+		box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+	  }
+	  .close {
+		height: 20px;
+		background-color: #777;
+		border: none;
+		color: white;
+		border-radius: 2px;
+		cursor: pointer;
+	  }

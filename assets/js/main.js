@@ -5,7 +5,13 @@
 */
 
 (function($) {
-
+	if (localStorage.getItem('cookieSeen') != 'shown') {
+		$('.cookie-banner').delay(2).fadeIn();
+		localStorage.setItem('cookieSeen','shown')
+	  };
+	  $('.close').click(function() {
+		$('.cookie-banner').fadeOut();
+	  })
 	var	$window = $(window),
 		$body = $('body');
 
